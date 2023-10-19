@@ -18,6 +18,15 @@ A ideia é uma plataforma onde músicos podem encontrar outros músicos, para to
 
 <h1>💻 Como executar esse projeto? </h1>
   - Clonar Esse Repositório
+  
   ```
+git clone https://github.com/mesquitta06/BandHub.git
+
+```
+Feito isso , com o flutter instalado e com suas dependencias devidamente configuradas, acesse a pasta raiz do projeto e execute:
+
+```
+Flutter run
+
 
 
