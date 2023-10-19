@@ -3,6 +3,7 @@ import 'package:bandhub/shared/themes/app_text_styles.dart';
 import 'package:bandhub/shared/themes/appcolors.dart';
 import 'package:bandhub/shared/widgets/social_login/social_login_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -59,14 +60,26 @@ class _LoginPageState extends State<LoginPage> {
                     style: AppTextStyles.titleHome,
                   ),
                 ),
+                //----**Função responsavel por realizar a autenticação com google signin**------//
                 Padding(
                   padding: const EdgeInsets.only(right: 40, left: 40, top: 40),
                   child: SocialLoginButton(
-                    ontap: () {
-                      print("Clicou");
+                    ontap: () async {
+                      GoogleSignIn _googleSignIn = GoogleSignIn(
+                        scopes: [
+                          'email',
+                          'https://www.googleapis.com/auth/contacts.readonly',
+                        ],
+                      );
+                      try {
+                        final response = await _googleSignIn.signIn();
+                        print(response);
+                      } catch (error) {
+                        print(error);
+                      }
                     },
                   ),
-                ),
+                )
               ],
             ),
           )

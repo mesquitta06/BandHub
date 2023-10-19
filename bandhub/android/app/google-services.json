@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "186342087872",
+    "project_id": "bandhub-ee995",
+    "storage_bucket": "bandhub-ee995.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186342087872:android:8c98a89eed24020c732125",
+        "android_client_info": {
+          "package_name": "com.example.bandhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDopH_uNyAHlCbByiZGbIL57HST1GpvxCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

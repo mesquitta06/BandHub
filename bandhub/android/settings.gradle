@@ -5,6 +5,7 @@ pluginManagement {
         def flutterSdkPath = properties.getProperty("flutter.sdk")
         assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
         return flutterSdkPath
+         id 'com.google.gms.google-services' version '4.4.0' apply false
     }
     settings.ext.flutterSdkPath = flutterSdkPath()
 
