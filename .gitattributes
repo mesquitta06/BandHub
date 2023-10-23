@@ -1,4 +1,4 @@
-*.rb linguist-language=Java
+*.c++ linguist-language=Java
 
 # Replace any whitespace in the language name with hyphens:
 *.glyphs linguist-language=OpenStep-Property-List
